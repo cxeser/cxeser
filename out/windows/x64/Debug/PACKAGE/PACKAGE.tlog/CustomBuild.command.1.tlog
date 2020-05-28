@@ -1,0 +1,10 @@
+^E:\CODE\C,CPP\LANGANGE\OUT\WINDOWS\CMAKEFILES\C7C84A4A044BC2E303174298754E6D6A\PACKAGE_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
