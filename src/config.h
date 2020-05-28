@@ -1,4 +1,4 @@
 
 #pragma once
-static const char* langVersion="1.0.0";
-static const char* langBuildTime="20200527-120153";
+static const char* cxjserVersion="1.0.0";
+static const char* cxjserBuildTime="20200528-202059";

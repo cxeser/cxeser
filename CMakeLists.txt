@@ -12,7 +12,7 @@ project ("cxjser")
 add_subdirectory ("src")
 include(InstallRequiredSystemLibraries)
 set (CPACK_RESOURCE_FILE_LICENSE
-  "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+  "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
 set (CPACK_PACKAGE_VERSION_MAJOR "${cxjser_VERSION_MAJOR}")
 set (CPACK_PACKAGE_VERSION_MINOR "${cxjser_VERSION_MINOR}")
 set (CPACK_PACKAGE_VERSION_PATCH "${cxjser_VERSION_PATCH}")

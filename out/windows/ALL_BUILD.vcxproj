@@ -169,13 +169,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="E:\code\c,cpp\langange\out\windows\src\cxjser.vcxproj">
+      <Project>{E291896A-1193-3B12-9C95-A040C63FD9C1}</Project>
+      <Name>cxjser</Name>
+    </ProjectReference>
     <ProjectReference Include="E:\code\c,cpp\langange\out\windows\src\helpers\helpers.vcxproj">
       <Project>{F86AD84F-0823-3B28-A3C8-AA88448C5AD5}</Project>
       <Name>helpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="E:\code\c,cpp\langange\out\windows\src\lang.vcxproj">
-      <Project>{3998B609-A9CC-3D40-B2B4-A352533E15D7}</Project>
-      <Name>lang</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

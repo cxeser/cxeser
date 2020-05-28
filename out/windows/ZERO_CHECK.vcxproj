@@ -108,7 +108,7 @@
     <CustomBuild Include="E:\code\c,cpp\langange\out\windows\CMakeFiles\c7c84a4a044bc2e303174298754e6d6a\generate.stamp.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/lang.sln
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/cxjser.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -121,7 +121,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/lang.sln
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/cxjser.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -134,7 +134,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/lang.sln
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/cxjser.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -147,7 +147,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/lang.sln
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/cxjser.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

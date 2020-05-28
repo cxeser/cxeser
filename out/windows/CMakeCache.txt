@@ -106,7 +106,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=lang
+CMAKE_PROJECT_NAME:STATIC=cxjser
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=E:/Windows Kits/10/bin/10.0.18362.0/x64/rc.exe
@@ -205,6 +205,12 @@ CPACK_SOURCE_ZIP:BOOL=ON
 
 //Path to a file.
 MSVC_REDIST_DIR:PATH=E:/Program Files (x86)/Microsoft Visual Studio/2019/Preview/VC/Redist/MSVC/14.27.28823
+
+//Value Computed by CMake
+cxjser_BINARY_DIR:STATIC=E:/code/c,cpp/langange/out/windows
+
+//Value Computed by CMake
+cxjser_SOURCE_DIR:STATIC=E:/code/c,cpp/langange
 
 //Value Computed by CMake
 lang_BINARY_DIR:STATIC=E:/code/c,cpp/langange/out/windows

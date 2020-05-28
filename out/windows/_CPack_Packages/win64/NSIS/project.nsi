@@ -5,7 +5,7 @@
 
   !define VERSION ""
   !define PATCH  ""
-  !define INST_DIR "E:/code/c,cpp/langange/out/windows/_CPack_Packages/win64/NSIS/lang--win64"
+  !define INST_DIR "E:/code/c,cpp/langange/out/windows/_CPack_Packages/win64/NSIS/cxjser--win64"
 
 ;--------------------------------
 ;Variables
@@ -25,14 +25,14 @@
   !include "MUI.nsh"
 
   ;Default installation folder
-  InstallDir "$PROGRAMFILES64\lang "
+  InstallDir "$PROGRAMFILES64\cxjser "
 
 ;--------------------------------
 ;General
 
   ;Name and file
-  Name "lang "
-  OutFile "E:/code/c,cpp/langange/out/windows/_CPack_Packages/win64/NSIS/lang--win64.exe"
+  Name "cxjser "
+  OutFile "E:/code/c,cpp/langange/out/windows/_CPack_Packages/win64/NSIS/cxjser--win64.exe"
 
   ;Set compression
   SetCompressor lzma
@@ -77,7 +77,7 @@ Var AR_RegFlags
 
   ClearErrors
   ;Reading component status from registry
-  ReadRegDWORD $AR_RegFlags HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang \Components\${SecName}" "Installed"
+  ReadRegDWORD $AR_RegFlags HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser \Components\${SecName}" "Installed"
   IfErrors "default_${SecName}"
     ;Status will stay default if registry value not found
     ;(component was never installed)
@@ -110,13 +110,13 @@ Var AR_RegFlags
     ;Section is not selected:
     ;Calling Section uninstall macro and writing zero installed flag
     !insertmacro "Remove_${${SecName}}"
-    WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang \Components\${SecName}" \
+    WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser \Components\${SecName}" \
   "Installed" 0
     Goto "exit_${SecName}"
 
  "leave_${SecName}:"
     ;Section is selected:
-    WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang \Components\${SecName}" \
+    WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser \Components\${SecName}" \
   "Installed" 1
 
  "exit_${SecName}:"
@@ -489,7 +489,7 @@ Function ConditionalAddToRegisty
   Pop $0
   Pop $1
   StrCmp "$0" "" ConditionalAddToRegisty_EmptyString
-    WriteRegStr SHCTX "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang " \
+    WriteRegStr SHCTX "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser " \
     "$1" "$0"
     ;MessageBox MB_OK "Set Registry: '$1' to '$0'"
     DetailPrint "Set install registry entry: '$1' to '$0'"
@@ -538,13 +538,13 @@ FunctionEnd
   
   !insertmacro MUI_PAGE_WELCOME
 
-  !insertmacro MUI_PAGE_LICENSE "E:/code/c,cpp/langange/License.txt"
+  !insertmacro MUI_PAGE_LICENSE "E:/code/c,cpp/langange/LICENSE"
   Page custom InstallOptionsPage
   !insertmacro MUI_PAGE_DIRECTORY
 
   ;Start Menu Folder Page Configuration
   !define MUI_STARTMENUPAGE_REGISTRY_ROOT "SHCTX"
-  !define MUI_STARTMENUPAGE_REGISTRY_KEY "Software\Humanity\lang "
+  !define MUI_STARTMENUPAGE_REGISTRY_KEY "Software\Humanity\cxjser "
   !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME "Start Menu Folder"
   !insertmacro MUI_PAGE_STARTMENU Application $STARTMENU_FOLDER
 
@@ -645,12 +645,12 @@ Section "-Core installation"
   File /r "${INST_DIR}\*.*"
 
   ;Store installation folder
-  WriteRegStr SHCTX "Software\Humanity\lang " "" $INSTDIR
+  WriteRegStr SHCTX "Software\Humanity\cxjser " "" $INSTDIR
 
   ;Create uninstaller
   WriteUninstaller "$INSTDIR\Uninstall.exe"
   Push "DisplayName"
-  Push "lang "
+  Push "cxjser "
   Call ConditionalAddToRegisty
   Push "DisplayVersion"
   Push ""
@@ -737,7 +737,7 @@ SectionEnd
 ;--------------------------------
 ; Create custom pages
 Function InstallOptionsPage
-  !insertmacro MUI_HEADER_TEXT "Install Options" "Choose options for installing lang "
+  !insertmacro MUI_HEADER_TEXT "Install Options" "Choose options for installing cxjser "
   !insertmacro MUI_INSTALLOPTIONS_DISPLAY "NSIS.InstallOptions.ini"
 
 FunctionEnd
@@ -809,17 +809,17 @@ FunctionEnd
 
 Section "Uninstall"
   ReadRegStr $START_MENU SHCTX \
-   "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang " "StartMenu"
+   "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser " "StartMenu"
   ;MessageBox MB_OK "Start menu is in: $START_MENU"
   ReadRegStr $DO_NOT_ADD_TO_PATH SHCTX \
-    "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang " "DoNotAddToPath"
+    "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser " "DoNotAddToPath"
   ReadRegStr $ADD_TO_PATH_ALL_USERS SHCTX \
-    "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang " "AddToPathAllUsers"
+    "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser " "AddToPathAllUsers"
   ReadRegStr $ADD_TO_PATH_CURRENT_USER SHCTX \
-    "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang " "AddToPathCurrentUser"
+    "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser " "AddToPathCurrentUser"
   ;MessageBox MB_OK "Add to path: $DO_NOT_ADD_TO_PATH all users: $ADD_TO_PATH_ALL_USERS"
   ReadRegStr $INSTALL_DESKTOP SHCTX \
-    "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang " "InstallToDesktop"
+    "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser " "InstallToDesktop"
   ;MessageBox MB_OK "Install to desktop: $INSTALL_DESKTOP "
 
 
@@ -845,13 +845,13 @@ Section "Uninstall"
 
   ;Remove the uninstaller itself.
   Delete "$INSTDIR\Uninstall.exe"
-  DeleteRegKey SHCTX "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang "
+  DeleteRegKey SHCTX "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser "
 
   ;Remove the installation directory if it is empty.
   RMDir "$INSTDIR"
 
   ; Remove the registry entries.
-  DeleteRegKey SHCTX "Software\Humanity\lang "
+  DeleteRegKey SHCTX "Software\Humanity\cxjser "
 
   ; Removes all optional components
   !insertmacro SectionList "RemoveSection_CPack"
@@ -894,7 +894,7 @@ Section "Uninstall"
     StrCmp "$MUI_TEMP" "$SMPROGRAMS" secondStartMenuDeleteLoopDone secondStartMenuDeleteLoop
   secondStartMenuDeleteLoopDone:
 
-  DeleteRegKey /ifempty SHCTX "Software\Humanity\lang "
+  DeleteRegKey /ifempty SHCTX "Software\Humanity\cxjser "
 
   Push $INSTDIR\bin
   StrCmp $DO_NOT_ADD_TO_PATH_ "1" doNotRemoveFromPath 0
@@ -915,11 +915,11 @@ SectionEnd
 Function .onInit
   StrCmp "" "ON" 0 inst
 
-  ReadRegStr $0 HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\lang " "UninstallString"
+  ReadRegStr $0 HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\cxjser " "UninstallString"
   StrCmp $0 "" inst
 
   MessageBox MB_YESNOCANCEL|MB_ICONEXCLAMATION \
-  "lang  is already installed. $\n$\nDo you want to uninstall the old version before installing the new one?" \
+  "cxjser  is already installed. $\n$\nDo you want to uninstall the old version before installing the new one?" \
   /SD IDYES IDYES uninst IDNO inst
   Abort
 
@@ -945,14 +945,14 @@ inst:
   ; install directory that is expected to be the
   ; default
   StrCpy $IS_DEFAULT_INSTALLDIR 0
-  StrCmp "$INSTDIR" "$PROGRAMFILES64\lang " 0 +2
+  StrCmp "$INSTDIR" "$PROGRAMFILES64\cxjser " 0 +2
     StrCpy $IS_DEFAULT_INSTALLDIR 1
 
   StrCpy $SV_ALLUSERS "JustMe"
   ; if default install dir then change the default
   ; if it is installed for JustMe
   StrCmp "$IS_DEFAULT_INSTALLDIR" "1" 0 +2
-    StrCpy $INSTDIR "$DOCUMENTS\lang "
+    StrCpy $INSTDIR "$DOCUMENTS\cxjser "
 
   ClearErrors
   UserInfo::GetName
@@ -978,7 +978,7 @@ inst:
   done:
   StrCmp $SV_ALLUSERS "AllUsers" 0 +3
     StrCmp "$IS_DEFAULT_INSTALLDIR" "1" 0 +2
-      StrCpy $INSTDIR "$PROGRAMFILES64\lang "
+      StrCpy $INSTDIR "$PROGRAMFILES64\cxjser "
 
   StrCmp "" "ON" 0 noOptionsPage
     !insertmacro MUI_INSTALLOPTIONS_EXTRACT "NSIS.InstallOptions.ini"
