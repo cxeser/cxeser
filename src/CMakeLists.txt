@@ -6,6 +6,6 @@ aux_source_directory(. DIR_SRC)
 
 add_subdirectory(helpers)
 
-add_executable (lang ${DIR_SRC})
+add_executable (cxjser ${DIR_SRC})
 
-target_link_libraries(lang helpers)
+target_link_libraries(cxjser helpers)
