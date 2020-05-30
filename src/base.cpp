@@ -17,9 +17,7 @@ int cxjser::start(int argc, char const* argv[]){
 			exit(1);
 		}
 		str = string(istreambuf_iterator<char>(fin), istreambuf_iterator<char>());
-		
 		vector<string> tokens = split(str, " .");
-		cout << str << endl;
 		for (int i = 0; i < tokens.size(); i++)
 			cout << tokens[i];
 
