@@ -11,6 +11,7 @@ enable_testing()
 project ("cxjser")
 # 包含子项目。
 add_subdirectory ("src")
+
 include(InstallRequiredSystemLibraries)
 set (CPACK_RESOURCE_FILE_LICENSE
   "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
