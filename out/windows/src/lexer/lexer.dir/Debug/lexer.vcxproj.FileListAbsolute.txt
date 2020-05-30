@@ -1,0 +1,2 @@
+E:\code\c,cpp\cxjser\out\windows\src\lexer\Debug\lexer.pdb
+E:\code\c,cpp\cxjser\out\windows\src\lexer\lexer.dir\Debug\lexer.pdb

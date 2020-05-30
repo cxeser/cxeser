@@ -6,6 +6,9 @@ aux_source_directory(. DIR_SRC)
 
 add_subdirectory(helpers)
 
+add_subdirectory(lexer)
+
 add_executable (cxjser ${DIR_SRC})
 
 target_link_libraries(cxjser helpers)
+target_link_libraries(cxjser lexer)

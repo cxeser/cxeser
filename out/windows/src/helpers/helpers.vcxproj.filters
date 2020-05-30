@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\code\c,cpp\langange\src\helpers\stringHelper.cpp">
+    <ClCompile Include="E:\code\c,cpp\cxjser\src\helpers\stringHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\code\c,cpp\langange\src\helpers\CMakeLists.txt" />
+    <CustomBuild Include="E:\code\c,cpp\cxjser\src\helpers\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{15C8C7F9-52D0-386E-AFE4-838241203DB3}</UniqueIdentifier>
+      <UniqueIdentifier>{6C4E03BF-B9A7-35B6-8F8B-BFD68C36DD4C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
-^E:\CODE\C,CPP\LANGANGE\SRC\CMAKELISTS.TXT
+^E:\CODE\C,CPP\CXJSER\SRC\CMAKELISTS.TXT
 setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-file E:/code/c,cpp/langange/out/windows/src/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/cxjser -BE:/code/c,cpp/cxjser/out/windows --check-stamp-file E:/code/c,cpp/cxjser/out/windows/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

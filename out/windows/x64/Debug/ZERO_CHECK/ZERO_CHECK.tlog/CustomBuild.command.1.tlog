@@ -1,6 +1,6 @@
-^E:\CODE\C,CPP\LANGANGE\OUT\WINDOWS\CMAKEFILES\C7C84A4A044BC2E303174298754E6D6A\GENERATE.STAMP.RULE
+^E:\CODE\C,CPP\CXJSER\OUT\WINDOWS\CMAKEFILES\08E3A61EF41A1C9A2A71782BB3F2C095\GENERATE.STAMP.RULE
 setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/langange/out/windows/cxjser.sln
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/cxjser -BE:/code/c,cpp/cxjser/out/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/code/c,cpp/cxjser/out/windows/cxjser.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

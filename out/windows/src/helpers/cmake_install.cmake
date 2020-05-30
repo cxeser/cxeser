@@ -1,8 +1,8 @@
-# Install script for directory: E:/code/c,cpp/langange/src/helpers
+# Install script for directory: E:/code/c,cpp/cxjser/src/helpers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/lang")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/cxjser")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

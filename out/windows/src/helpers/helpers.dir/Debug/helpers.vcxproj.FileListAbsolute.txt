@@ -1,2 +1,2 @@
-E:\code\c,cpp\langange\out\windows\src\helpers\Debug\helpers.pdb
-E:\code\c,cpp\langange\out\windows\src\helpers\helpers.dir\Debug\helpers.pdb
+E:\code\c,cpp\cxjser\out\windows\src\helpers\Debug\helpers.pdb
+E:\code\c,cpp\cxjser\out\windows\src\helpers\helpers.dir\Debug\helpers.pdb

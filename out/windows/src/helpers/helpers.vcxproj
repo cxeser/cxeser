@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F86AD84F-0823-3B28-A3C8-AA88448C5AD5}</ProjectGuid>
+    <ProjectGuid>{F582B44D-3588-383A-A623-093373CAEF52}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,19 +59,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">helpers.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">helpers</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">helpers.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">helpers</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">helpers.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">helpers</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">helpers.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">helpers</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
@@ -208,10 +208,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\code\c,cpp\langange\src\helpers\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/code/c,cpp/langange/src/helpers/CMakeLists.txt</Message>
+    <CustomBuild Include="E:\code\c,cpp\cxjser\src\helpers\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/code/c,cpp/cxjser/src/helpers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-file E:/code/c,cpp/langange/out/windows/src/helpers/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/cxjser -BE:/code/c,cpp/cxjser/out/windows --check-stamp-file E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -220,11 +220,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/code/c,cpp/langange/src/helpers/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/code/c,cpp/cxjser/src/helpers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-file E:/code/c,cpp/langange/out/windows/src/helpers/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/cxjser -BE:/code/c,cpp/cxjser/out/windows --check-stamp-file E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -233,11 +233,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/code/c,cpp/langange/src/helpers/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/code/c,cpp/cxjser/src/helpers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-file E:/code/c,cpp/langange/out/windows/src/helpers/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/cxjser -BE:/code/c,cpp/cxjser/out/windows --check-stamp-file E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -246,11 +246,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/code/c,cpp/langange/src/helpers/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/code/c,cpp/cxjser/src/helpers/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/langange -BE:/code/c,cpp/langange/out/windows --check-stamp-file E:/code/c,cpp/langange/out/windows/src/helpers/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/c,cpp/cxjser -BE:/code/c,cpp/cxjser/out/windows --check-stamp-file E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,16 +259,16 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\c,cpp\langange\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\c,cpp\cxjser\out\windows\src\helpers\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\code\c,cpp\langange\src\helpers\stringHelper.cpp" />
+    <ClCompile Include="E:\code\c,cpp\cxjser\src\helpers\stringHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\code\c,cpp\langange\out\windows\ZERO_CHECK.vcxproj">
-      <Project>{B89442EB-C759-3DCD-8FFA-CC83D8962245}</Project>
+    <ProjectReference Include="E:\code\c,cpp\cxjser\out\windows\ZERO_CHECK.vcxproj">
+      <Project>{209050A9-AAE6-3615-98DF-987A3F076A58}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

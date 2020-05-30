@@ -1,5 +1,0 @@
-﻿  CPack: Create package using NSIS
-  CPack: Install projects
-  CPack: - Install project: cxjser [Debug]
-  CPack: Create package
-  CPack: - package: E:/code/c,cpp/langange/out/windows/cxjser--win64.exe generated.
