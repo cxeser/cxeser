@@ -12,7 +12,9 @@ jobs:
     - name: installcmake
       run: sudo apt-get install -y cmake
     - name: cmake
-      run: ./build      
+      run: 
+        chmod +x ./build
+        ./build      
     - name: make
       run: cd out/linux &&make
     - name: package
