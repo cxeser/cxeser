@@ -13,7 +13,7 @@ jobs:
       run: sudo apt-get install -y cmake
     - name: cmake
       run: 
-        chmod +x ./build
+        chmod +x ./build;
         ./build      
     - name: make
       run: cd out/linux &&make
