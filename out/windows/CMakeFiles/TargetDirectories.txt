@@ -1,13 +1,17 @@
 E:/code/c,cpp/cxjser/out/windows/CMakeFiles/PACKAGE.dir
 E:/code/c,cpp/cxjser/out/windows/CMakeFiles/INSTALL.dir
+E:/code/c,cpp/cxjser/out/windows/CMakeFiles/RUN_TESTS.dir
 E:/code/c,cpp/cxjser/out/windows/CMakeFiles/ALL_BUILD.dir
 E:/code/c,cpp/cxjser/out/windows/CMakeFiles/ZERO_CHECK.dir
 E:/code/c,cpp/cxjser/out/windows/src/CMakeFiles/cxjser.dir
 E:/code/c,cpp/cxjser/out/windows/src/CMakeFiles/PACKAGE.dir
 E:/code/c,cpp/cxjser/out/windows/src/CMakeFiles/INSTALL.dir
+E:/code/c,cpp/cxjser/out/windows/src/CMakeFiles/RUN_TESTS.dir
 E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/helpers.dir
 E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/PACKAGE.dir
 E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/INSTALL.dir
+E:/code/c,cpp/cxjser/out/windows/src/helpers/CMakeFiles/RUN_TESTS.dir
 E:/code/c,cpp/cxjser/out/windows/src/lexer/CMakeFiles/lexer.dir
 E:/code/c,cpp/cxjser/out/windows/src/lexer/CMakeFiles/PACKAGE.dir
 E:/code/c,cpp/cxjser/out/windows/src/lexer/CMakeFiles/INSTALL.dir
+E:/code/c,cpp/cxjser/out/windows/src/lexer/CMakeFiles/RUN_TESTS.dir
