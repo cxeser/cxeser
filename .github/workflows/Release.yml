@@ -13,7 +13,7 @@ jobs:
       run: 
         sudo apt-get install -y cmake;
         sudo apt-get remove gcc g++;
-        sudo apt-get install gcc g++
+        sudo apt-get install gcc g++-9
     - name: cmake
       run: 
         chmod +x ./build;
