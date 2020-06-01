@@ -12,7 +12,7 @@ jobs:
     - name: installcmake
       run: 
         sudo apt-get install -y cmake;
-        sudo apt-get remove gcc g++；
+        sudo apt-get remove gcc g++;
         sudo apt-get install gcc g++
     - name: cmake
       run: 
