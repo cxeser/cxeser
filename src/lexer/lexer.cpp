@@ -15,9 +15,9 @@ vector<string> lexer(const string filename) {
 			result.push_back(string{ tmp });
 		}
 		return result;
-	} catch (const std::exception& e) {
+	} catch (const exception& e) {
 		fin.close();
-		std::cerr << e.what() << '\n';
+		cerr << "cxjser Error :" << e.what() << '\n';
 		return {};
 	}
 }

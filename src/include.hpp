@@ -2,6 +2,7 @@
 // 或项目特定的包含文件。
 #pragma once
 #include <iostream>
+#include <regex>
 #include <fstream>
 #include <exception>
 #include <sstream>
