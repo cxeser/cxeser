@@ -8,7 +8,7 @@ add_subdirectory(helpers)
 
 add_subdirectory(lexer)
 
-add_executable (cxjser ${DIR_SRC})
+add_executable (cxeser ${DIR_SRC})
 
-target_link_libraries(cxjser helpers)
-target_link_libraries(cxjser lexer)
+target_link_libraries(cxeser helpers)
+target_link_libraries(cxeser lexer)

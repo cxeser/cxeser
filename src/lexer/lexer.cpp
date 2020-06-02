@@ -17,7 +17,7 @@ vector<string> lexer(const string filename) {
 		return result;
 	} catch (const exception& e) {
 		fin.close();
-		cerr << "cxjser Error :" << e.what() << '\n';
+		cerr << "cxeser Error :" << e.what() << '\n';
 		return {};
 	}
 }

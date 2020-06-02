@@ -1,10 +1,10 @@
 #pragma once
-class cxjser
+class cxeser
 {
 private:
     /* data */
 public:
-    cxjser(/* args */) {}
-    ~cxjser() {}
+    cxeser(/* args */) {}
+    ~cxeser() {}
     int start(int argc, char const* argv[]);
 };
