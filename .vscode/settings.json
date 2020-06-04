@@ -48,6 +48,8 @@
         "sstream": "cpp",
         "string": "cpp",
         "vector": "cpp",
-        "regex": "cpp"
-    }
+        "regex": "cpp",
+        "locale": "cpp"
+    },
+    "C_Cpp.default.includePath": ["src/libs/asio"]
 }

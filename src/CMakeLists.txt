@@ -12,3 +12,5 @@ add_executable (cxeser ${DIR_SRC})
 
 target_link_libraries(cxeser helpers)
 target_link_libraries(cxeser lexer)
+
+include_directories("libs/asio")

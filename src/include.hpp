@@ -3,6 +3,7 @@
 #pragma once
 #include <iostream>
 #include <regex>
+#include <cctype>
 #include <fstream>
 #include <exception>
 #include <sstream>

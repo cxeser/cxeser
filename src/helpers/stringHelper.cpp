@@ -1,4 +1,5 @@
 #include "../include.hpp"
+#include "stringHelper.hpp"
 using namespace std;
 vector<string> split(const string& str, const string& pattern) {
 	vector<string> ret;
@@ -18,4 +19,17 @@ vector<string> split(const string& str, const string& pattern) {
 	if (!str.substr(start).empty())
 		ret.push_back(str.substr(start));
 	return ret;
+}
+isdigit_s_t isdigit_s(const string str) {
+	bool hasdot = false;
+	for (size_t i = 0; i <= str.length(); i++) {
+		cout << "isdigit_s" << str.c_str()[i] << endl;
+		char thisChar = str.c_str()[i];
+		if (thisChar = '.'&&(i!=0)) {
+			hasdot = true;
+		} else if (!isdigit(char(thisChar))) {
+			return isdigit_s_t::no;
+		}
+	}
+	return hasdot ? isdigit_s_t::hasdot : isdigit_s_t::yes;
 }
