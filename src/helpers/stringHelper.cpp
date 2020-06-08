@@ -22,13 +22,12 @@ vector<string> split(const string& str, const string& pattern) {
 }
 isdigit_s_t isdigit_s(const string str) {
 	bool hasdot = false;
-	for (size_t i = 0; i <= str.length(); i++) {
-		cout << "isdigit_s" << str.c_str()[i] << endl;
+	for (unsigned long long i = 0; i < str.length(); i++) {
 		char thisChar = str.c_str()[i];
-		if (thisChar = '.'&&(i!=0)) {
-			hasdot = true;
-		} else if (!isdigit(char(thisChar))) {
+		if (!isdigit(char(thisChar))) {
 			return isdigit_s_t::no;
+		} else if (thisChar = '.' && (i != 0)) {
+			hasdot = true;
 		}
 	}
 	return hasdot ? isdigit_s_t::hasdot : isdigit_s_t::yes;

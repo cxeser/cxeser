@@ -4,13 +4,12 @@ cmake_minimum_required (VERSION 3.8)
 # 将源代码添加到此项目的可执行文件。
 aux_source_directory(. DIR_SRC)
 
-add_subdirectory(helpers)
+include_directories("./libs/asio")
 
+add_subdirectory(helpers)
 add_subdirectory(lexer)
 
 add_executable (cxeser ${DIR_SRC})
 
 target_link_libraries(cxeser helpers)
 target_link_libraries(cxeser lexer)
-
-include_directories("libs/asio")

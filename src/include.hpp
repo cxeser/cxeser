@@ -3,6 +3,8 @@
 #pragma once
 #include <iostream>
 #include <regex>
+#include <list>
+#include <map>
 #include <cctype>
 #include <fstream>
 #include <exception>
@@ -13,4 +15,8 @@
 #include <streambuf>
 #include <cstdlib>
 #include "config.h"
+#ifdef _WIN32
+#include <sdkddkver.h>
+#endif
+#include "asio.hpp"
 // TODO: 在此处引用程序需要的其他标头。
