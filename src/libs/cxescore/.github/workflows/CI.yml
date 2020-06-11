@@ -1,0 +1,33 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: installcmake
+        run: 
+          sudo apt-get remove g++;
+          sudo apt-get install -y cmake g++-9
+      - name: cmake
+        run: 
+          ls;
+          chmod +x ./build;
+          ./build      
+      - name: make
+        run: cd out/linux &&make
+      - name: package
+        run: cd out/linux &&make package
+      - uses: actions/checkout@v2
+      - uses: release-drafter/release-drafter@v5.8.0
+        name: Draft
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}

@@ -1,0 +1,50 @@
+.TH "src/helpers/stringHelper.hpp" 3 "2020年 六月 11日 星期四" "cxescore" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/helpers/stringHelper.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./include\&.hpp'\fP
+.br
+
+.SS "枚举"
+
+.in +1c
+.ti -1c
+.RI "enum \fBisdigit_s_t\fP { \fBisdigit_s_t::yes\fP =0, \fBisdigit_s_t::hasdot\fP =1, \fBisdigit_s_t::no\fP =2 }"
+.br
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "vector< string > \fBsplit\fP (const string &str, const string &pattern)"
+.br
+.ti -1c
+.RI "\fBisdigit_s_t\fP \fBisdigit_s\fP (const string str)"
+.br
+.in -1c
+.SH "枚举类型说明"
+.PP 
+.SS "enum \fBisdigit_s_t\fP\fC [strong]\fP"
+
+.PP
+\fB枚举值\fP
+.in +1c
+.TP
+\fB\fIyes \fP\fP
+.TP
+\fB\fIhasdot \fP\fP
+.TP
+\fB\fIno \fP\fP
+.SH "函数说明"
+.PP 
+.SS "\fBisdigit_s_t\fP isdigit_s (const string str)"
+
+.SS "vector<string> split (const string & str, const string & pattern)"
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 cxescore 的 源代码自动生成\&.
