@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>cxescore: src/helpers/stringHelper.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">cxescore
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0c26bd22f254302c4dfbaa95bf527e9d.html">helpers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">stringHelper.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="string_helper_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../include.hpp&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7">    4</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7">isdigit_s_t</a> { <a class="code" href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7aa6105c0a611b41b08f1209506350279e">yes</a>=0,</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                       <a class="code" href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7a911da24fd66c4caa50ab99fabe6f86ad">hasdot</a>=1,</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                       <a class="code" href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7a7fa3b767c460b54a2be4d49030b349c7">no</a>=2, };</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> vector&lt;string&gt; <a class="code" href="string_helper_8hpp.html#a4ff9ed2a952a99bb8a9fb2d783152e8c">split</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; pattern);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> <a class="code" href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7">isdigit_s_t</a> <a class="code" href="string_helper_8hpp.html#a5f300f5615ba13039919ac144de0068e">isdigit_s</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> str);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astring_helper_8hpp_html_ae465f9a55e3223307b42b1e84adfd6c7a7fa3b767c460b54a2be4d49030b349c7"><div class="ttname"><a href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7a7fa3b767c460b54a2be4d49030b349c7">isdigit_s_t::no</a></div><div class="ttdeci">@ no</div></div>
+<div class="ttc" id="astring_helper_8hpp_html_ae465f9a55e3223307b42b1e84adfd6c7a911da24fd66c4caa50ab99fabe6f86ad"><div class="ttname"><a href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7a911da24fd66c4caa50ab99fabe6f86ad">isdigit_s_t::hasdot</a></div><div class="ttdeci">@ hasdot</div></div>
+<div class="ttc" id="astring_helper_8hpp_html_a5f300f5615ba13039919ac144de0068e"><div class="ttname"><a href="string_helper_8hpp.html#a5f300f5615ba13039919ac144de0068e">isdigit_s</a></div><div class="ttdeci">isdigit_s_t isdigit_s(const string str)</div><div class="ttdef"><b>Definition:</b> stringHelper.cpp:23</div></div>
+<div class="ttc" id="astring_helper_8hpp_html_ae465f9a55e3223307b42b1e84adfd6c7"><div class="ttname"><a href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7">isdigit_s_t</a></div><div class="ttdeci">isdigit_s_t</div><div class="ttdef"><b>Definition:</b> stringHelper.hpp:4</div></div>
+<div class="ttc" id="astring_helper_8hpp_html_a4ff9ed2a952a99bb8a9fb2d783152e8c"><div class="ttname"><a href="string_helper_8hpp.html#a4ff9ed2a952a99bb8a9fb2d783152e8c">split</a></div><div class="ttdeci">vector&lt; string &gt; split(const string &amp;str, const string &amp;pattern)</div><div class="ttdef"><b>Definition:</b> stringHelper.cpp:4</div></div>
+<div class="ttc" id="astring_helper_8hpp_html_ae465f9a55e3223307b42b1e84adfd6c7aa6105c0a611b41b08f1209506350279e"><div class="ttname"><a href="string_helper_8hpp.html#ae465f9a55e3223307b42b1e84adfd6c7aa6105c0a611b41b08f1209506350279e">isdigit_s_t::yes</a></div><div class="ttdeci">@ yes</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
