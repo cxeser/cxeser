@@ -7,7 +7,6 @@ set(cxescore_VERSION_MAJOR 1)
 set(cxescore_VERSION_MINOR 0)
 set(cxescore_VERSION_PATCH 5)
 include(config.cmake)
-include(test.cmake)
 project ("cxescore")
 # 包含子项目。
 add_subdirectory ("src")

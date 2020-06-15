@@ -6,10 +6,8 @@ aux_source_directory(. DIR_SRC)
 
 include_directories("./libs/asio")
 
-add_subdirectory(helpers)
-add_subdirectory(lexer)
+add_subdirectory(libs/cxescore)
 
 add_executable (cxeser ${DIR_SRC})
 
-target_link_libraries(cxeser helpers)
-target_link_libraries(cxeser lexer)
+target_link_libraries(cxeser cxescore)

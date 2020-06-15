@@ -1,18 +1,28 @@
 #include "base.hpp"
 #include "include.hpp"
-#include "helpers/stringHelper.hpp"
-#include "lexer/lexer.hpp"
+#include "libs/cxescore/src/base.hpp"
+#include "libs/cxescore/src/lexer/lexer.hpp"
 int cxeser::start(int argc, char const* argv[]){
     using namespace std;
 	if (argc == 1) {
-		cerr << "Usage : " << argv[0] << "file";
+		cerr << "Usage : " << argv[0] << " file";
 		exit(1);
 	}
-	vector<string> tokens = lexer(argv[1]);
-	for (unsigned long long i = 0; i < tokens.size(); i++)
+	ifstream fin(argv[1]);
+	if (!fin.is_open())
 	{
-		cout << tokens[i]<<",";
+		cerr << "Cannot open file " << argv[1];
+		fin.close();
+		exit(EXIT_FAILURE);
 	}
 	
+	vector<string> tokens = cxesCore::lexer(fin);
+	for (unsigned long long i = 0; i < tokens.size(); i++)
+	{
+		cout << tokens[i] << ",";
+	}
+	
+	
+	fin.close();
 	return 0;
 }
