@@ -9,5 +9,6 @@ file(APPEND ${configFileName} "static const char* cxeserVersion=\"${cxeser_VERSI
 file(APPEND ${configFileName} "\r\nstatic const char* cxeserBuildTime=\"${buildTime}\";")
 
 if(UNIX OR APPLE)
+    message("unix")
     add_compile_options("-lpthread")  
 endif(UNIX OR APPLE)
