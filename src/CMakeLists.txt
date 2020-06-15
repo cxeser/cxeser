@@ -4,7 +4,6 @@ cmake_minimum_required (VERSION 3.8)
 # 将源代码添加到此项目的可执行文件。
 aux_source_directory(. DIR_SRC)
 
-include_directories("./libs/asio")
 
 add_subdirectory(libs/cxescore)
 
