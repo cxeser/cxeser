@@ -1,5 +1,6 @@
 {
     "C_Cpp.dimInactiveRegions": false,
+    "cmake.buildDirectory": "${workspaceFolder}/out",
     "files.associations": {
         "*.chn": "chinses",
         "*.md": "markdown",
@@ -54,5 +55,5 @@
         "map": "cpp",
         "filesystem": "cpp",
         "list": "cpp"
-    }
+    },
 }
