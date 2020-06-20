@@ -18,16 +18,15 @@ jobs:
           sudo apt-get remove g++;
           sudo apt-get install -y cmake g++-9
       - name: cmake
-        run: 
-          ls;
+        run:
           chmod +x ./build;
           ./build      
       - name: make
-        run: cd out/linux &&make
+        run: cd out &&make
       - name: package
-        run: cd out/linux &&make package
-      - uses: actions/checkout@v2
+        run: cd out &&make package
       - uses: release-drafter/release-drafter@v5.8.0
         name: Draft
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      - uses: actions/checkout@v2
